@@ -1,3 +1,8 @@
+install virtual environment (in repo root)
+```
+pipenv install --python=3.7.6
+```
+
 enter virtual environment (in repo root)
 ```
 pipenv shell
@@ -11,5 +16,6 @@ uvicorn fastapi_app:APP --reload
 
 push to heroku (in repo root)
 ```
-git subtree push --prefix allay-ds-api heroku master
+git checkout feature/<your-feature-name>
+git subtree push --prefix allay-ds-api staging master
 ```
