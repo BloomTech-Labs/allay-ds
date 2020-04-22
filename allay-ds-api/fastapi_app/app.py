@@ -38,13 +38,6 @@ def create_app():
     """
     app = FastAPI(title=__name__)
 
-    @app.get('/')
-    async def get_root():
-        return {
-            'message': 42,
-            'useful': False
-        }
-
     @app.post('/check_review', response_model=ReviewResponseItem)
     async def post_check_review(item: ReviewRequestItem):
         score = get_score(item.text)
