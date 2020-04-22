@@ -1,4 +1,5 @@
 exploration/data/
 exploration/.ipynb_checkpoints/explore_data-checkpoint.ipynb
-Pipfile
-Pipfile.lock
+
+.vscode
+.DS_Store
