@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 
 from .models.rate_random import get_score
-from .request_response_items import (ReviewRequestItem,
+from .request_response_items import (RecommendReponseItem,
+                                     RecommendRequestItem, ReviewRequestItem,
                                      ReviewResponseItem)
 
 assert load_dotenv(), 'failed to initialize environment'
@@ -38,14 +39,23 @@ def create_app():
     """
     app = FastAPI(title=__name__)
 
-    @app.post('/check_review', response_model=ReviewResponseItem)
-    async def post_check_review(item: ReviewRequestItem):
+    @app.post('/check_review', name='check_review',
+              response_model=ReviewResponseItem)
+    async def post_check_review(item: ReviewRequestItem, ):
         score = get_score(item.text)
         flag = score_to_flag(score)
         return {
             'text': item.text,
             'flag': flag,
             'score': score
+        }
+
+    @app.post('/recommend', name='recommend',
+              response_model=RecommendReponseItem)
+    async def post_recommend(item: RecommendRequestItem):
+        return {
+            'user_id': item.user_id,
+            'post_ids': item.post_ids
         }
 
     return app
