@@ -4,43 +4,12 @@ import os
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
-from pydantic import BaseModel, Field
 
 from .models.rate_random import get_score
+from .request_response_items import (ReviewRequestItem,
+                                     ReviewResponseItem)
 
 assert load_dotenv(), 'failed to initialize environment'
-
-
-class ReviewRequestItem(BaseModel):
-    """Request body for /check_review endpoint"""
-    text: str = Field(
-        ...,
-        title='Review Text',
-        description='User submitted review content as a single string.',
-    )
-
-
-class ReviewResponseItem(BaseModel):
-    """Response body for /check_review endpoint"""
-    text: str = Field(
-        ...,
-        title='Review Text',
-        description='User submitted review content as a single string.',
-    )
-    flag: int = Field(
-        ...,
-        title='Ok/Review/Block flag',
-        description='0=OK, 1=REVIEW, 2=BLOCK',
-        ge=0,
-        le=2
-    )
-    score: float = Field(
-        ...,
-        title='Inappropriateness Score',
-        description='Probability of inappropriateness of review content.',
-        ge=0.0,
-        le=1.0,
-    )
 
 
 def score_to_flag(score: float):
@@ -52,8 +21,8 @@ def score_to_flag(score: float):
     int: 0 = OK, 1 = REVIEW, 2 = BLOCK
     """
     assert isinstance(score, float), f'score type ({type(score)}) not float.'
-    assert (score >= 0.0 and score <= 1.0,
-            f'Score ({score}) outside acceptable range (0->1).')
+    assert score >= 0.0 and score <= 1.0, \
+        f'Score ({score}) outside acceptable range (0->1).'
     if score < 1/3:
         return 0
     elif score < 2/3:
