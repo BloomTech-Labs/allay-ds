@@ -35,7 +35,7 @@ class RecommendReponseItem(BaseModel):
 
 class ReviewRequestItem(BaseModel):
     """Request body for /check_review endpoint"""
-    text: str = Field(
+    comment: str = Field(
         ...,
         title='Review Text',
         description='User submitted review content as a single string',
@@ -44,7 +44,7 @@ class ReviewRequestItem(BaseModel):
 
 class ReviewResponseItem(BaseModel):
     """Response body for /check_review endpoint"""
-    text: str = Field(
+    comment: str = Field(
         ...,
         title='Review Text',
         description='User submitted review content as a single string',
