@@ -49,9 +49,9 @@ for live deployment and prediction.
 We use a text classifier model to categorize whether reviews posted to the
 Allay Lambda School website are appropriate.
 
-<img src="https://i.imgur.com/oD7TZTe.png" width="500">
+<img src="https://i.imgur.com/ccUMIze.png" width="500">
 
-<img src="https://i.imgur.com/toK6IkJ.png" width="500">
+<img src="https://i.imgur.com/BW4K5W9.png" width="500">
 
 ### Explanatory Variables
 
