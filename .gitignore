@@ -1,5 +1,15 @@
 exploration/data/
 exploration/.ipynb_checkpoints/explore_data-checkpoint.ipynb
+wandb/
+exploration/code_snippets.ipynb
+exploration/explore_data_new.ipynb
+exploration/explore_data_verbose.ipynb
+exploration/train_models_test.ipynb
 
 .vscode
 .DS_Store
+exploration/.ipynb_checkpoints/*
+exploration/Pipfile.lock
+exploration/Pipfile
+exploration/AccuracyVsRank.png
+exploration/AccuracyVsRun.png

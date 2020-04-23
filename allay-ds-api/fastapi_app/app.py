@@ -42,10 +42,10 @@ def create_app():
     @app.post('/check_review', name='check_review',
               response_model=ReviewResponseItem)
     async def post_check_review(item: ReviewRequestItem, ):
-        score = get_score(item.text)
+        score = get_score(item.comment)
         flag = score_to_flag(score)
         return {
-            'text': item.text,
+            'comment': item.comment,
             'flag': flag,
             'score': score
         }
