@@ -17,6 +17,8 @@ requests = "*"
 psycopg2-binary = "*"
 python-dotenv = "*"
 tensorflow-cpu = "*"
+starlette = "*"
+coverage = "*"
 
 [requires]
 python_full_version = "3.7.6"
