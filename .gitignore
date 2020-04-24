@@ -11,3 +11,5 @@ exploration/train_models_test.ipynb
 exploration/.ipynb_checkpoints/*
 exploration/Pipfile.lock
 exploration/Pipfile
+exploration/AccuracyVsRank.png
+exploration/AccuracyVsRun.png
