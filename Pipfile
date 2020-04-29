@@ -4,11 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-autopep8 = "*"
-pytest = "*"
-ipykernel = "*"
-ipywidgets = "*"
-pylint = "*"
 
 [packages]
 fastapi = "*"
@@ -19,6 +14,18 @@ python-dotenv = "*"
 tensorflow-cpu = "*"
 starlette = "*"
 coverage = "*"
+pandas = "*"
+spacy = "*"
+wandb = "*"
+scikit-learn = "*"
+matplotlib = "*"
+autopep8 = "*"
+pytest = "*"
+ipykernel = "*"
+ipywidgets = "*"
+pylint = "*"
+xgboost = "*"
+scrapy = "*"
 
 [requires]
 python_full_version = "3.7.6"
