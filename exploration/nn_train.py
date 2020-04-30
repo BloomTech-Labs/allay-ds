@@ -3,6 +3,8 @@ This module is created to hold the neural network training function
 that is necessary to run weights and biases hyperparameter sweeps.
 https://github.com/wandb/client/issues/956
 per the above issue.
+
+This file is currently deprecated in favor of sweep_train.py
 '''
 import pandas as pd
 import numpy as np
@@ -37,7 +39,6 @@ import os
 from process_data import reset_data_with_val
 WANDB_API_KEY = "0fcba704b9f2b77c7881c3e23af2d4adf89dbbbd"
 
-
 x_train, y_train, x_val, y_val = reset_data_with_val()
 vect = TfidfVectorizer(stop_words = 'english', max_features=2000)
 x_train_vect = vect.fit_transform(x_train)
@@ -56,10 +57,10 @@ sweep_config = {
             'values': [3, 6]
         },
         'weight_decay': {
-            'values': [0.0005, 0.005, 0.05]
+            'values': [0.0005, 0.005]
         },
         'learning_rate': {
-            'values': [1e-2, 1e-3, 1e-4]
+            'values': [1e-2, 1e-3]
         }
     }
 }
