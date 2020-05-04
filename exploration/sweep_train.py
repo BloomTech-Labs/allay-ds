@@ -16,7 +16,7 @@ from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras import regularizers
 from tensorflow.keras.optimizers import Nadam
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 from process_data import reset_data_with_val
 
@@ -30,8 +30,8 @@ hyperparameter_defaults = dict(
 wandb.init(config=hyperparameter_defaults)
 config = wandb.config
 
-# This needs to be an environment variable
-WANDB_API_KEY = INSERT_API_KEY_HERE
+load_dotenv()
+WANDB_API_KEY = os.getenv("WANDB_API_KEY")
 
 # Turn data into a form that Keras accepts.
 # This section can be customized.
