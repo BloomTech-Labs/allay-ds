@@ -6,10 +6,20 @@ metric:
 parameters:
   epochs:
     min: 3
-    max: 5
+    max: 15
   learning_rate:
     min: 0.0001
     max: 0.1
   optimizer:
-        values: ["adam", "adadelta"]
-    
+    values: ["adam", "adadelta", "nadam"]
+  num_filters:
+    min: 2
+    max: 100
+  base_kernel_size:
+    min: 2
+    max: 4
+  dropout_rate:
+    min: 0.1
+    max: 0.3
+  loss_function:
+    values: ["binary_crossentropy"]
