@@ -1,0 +1,15 @@
+program: exploration/sweep_cnn_train.py
+method: bayes
+metric:
+  name: val_accuracy
+  goal: maximize
+parameters:
+  epochs:
+    min: 3
+    max: 5
+  learning_rate:
+    min: 0.0001
+    max: 0.1
+  optimizer:
+        values: ["adam", "adadelta"]
+    
