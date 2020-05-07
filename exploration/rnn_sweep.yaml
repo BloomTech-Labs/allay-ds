@@ -1,0 +1,19 @@
+program: exploration/rnn_sweep_train.py
+name: rnn
+description: rnn with additional layers
+method: bayes
+metric:
+  name: val_accuracy
+  goal: maximize
+parameters:
+  epochs:
+    min: 3
+    max: 6
+  learning_rate:
+    min: 0.0001
+    max: 0.01
+early_terminate:
+    type: hyperband
+    min_iter: 3
+project: allay-ds-23
+entity: alexmjn
