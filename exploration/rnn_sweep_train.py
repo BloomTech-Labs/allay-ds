@@ -51,11 +51,12 @@ model = Sequential()
 model.add(Embedding(5001,
                     64,
                     input_length=60))
-model.add(LSTM(64))
-
-#model.add(Dropout(.2))
-#model.add(Dense(32, activation='relu'))
-#model.add(Dense(8, activation='relu'))
+model.add(LSTM(64, return_sequences=True))
+model.add(Dropout(.2))
+model.add(LSTM(64, return_sequences=True))
+model.add(Dropout(.2))
+model.add(LSTM(32, return_sequences=True))
+model.add(LSTM(16))
 
 model.add(Dense(units=1, activation='sigmoid'))
 
