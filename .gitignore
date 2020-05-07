@@ -13,3 +13,10 @@ exploration/Pipfile.lock
 exploration/Pipfile
 exploration/AccuracyVsRank.png
 exploration/AccuracyVsRun.png
+exploration/__main__.py
+exploration/__pycache__/__main__.cpython-37.pyc
+exploration/__pycache__/nn_train.cpython-37.pyc
+exploration/__pycache__/process_data.cpython-37.pyc
+exploration/__pycache__/__init__.cpython-37.pyc
+__pycache__/__main__.cpython-37.pyc
+.env
