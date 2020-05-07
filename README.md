@@ -1,26 +1,29 @@
+[![License](https://img.shields.io/github/license/Lambda-School-Labs/allay-ds)](https://github.com/Lambda-School-Labs/allay-ds/blob/master/LICENSE)
+![Python 3.7.6](https://img.shields.io/badge/python-3.7.6-blue)
+![FastAPI](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/fastapi)
+![Tensorflow](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/tensorflow-cpu?label=tensorflow)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/test_coverage)
+
 🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
 
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric.  Contributing to docs does NOT count as a PR to meet your weekly requirements.
+# Allay
 
-# 1️⃣ Allay
-
-You can find the project at [Allay URL](https://labs21-allay-fe.herokuapp.com/dashboard). (This is currently the Labs 21 version.)
+You can find the project at [Allay URL](https://labs21-allay-fe.herokuapp.com/). (This is currently the Labs 21 version.)
 
 ## 5️⃣ Contributors
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
-|                                       [Alex Jenkins-Neary](https://github.com/alexmjn)                                        |                                       [Caleb Spraul](https://github.com/jcs-lambda)                                        |                                       [Andrew Archie](https://github.com/BaiganKing)                                        |                                       [Student 4](https://github.com/)                                        |                                       [Student 5](https://github.com/)                                        |
-| :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |
-|                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)             |
-| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) |
-
+|[Alex Jenkins-Neary](https://github.com/alexmjn)|[Caleb Spraul](https://github.com/jcs-lambda)|[Andrew Archie](https://github.com/BaiganKing)|
+| :----: | :----: | :----: |
+|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/alexmjn)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/jcs-lambda)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/BaiganKing)|
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|
 
 
 🚫 5️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
 
-![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -29,25 +32,24 @@ You can find the project at [Allay URL](https://labs21-allay-fe.herokuapp.com/da
 
 ## Project Overview
 
+[Trello Board](https://trello.com/b/wDXK4crl/allay23)
 
-1️⃣ [Trello Board](https://trello.com/b/wDXK4crl/allay23-sprint-1-%F0%9F%94%A5-20-04-20-30-04-20)
+[Product Canvas](https://www.notion.so/Allay-eb3c5b88ffab4ff199663cb40fcc1402)
 
-1️⃣ [Product Canvas](https://www.notion.so/Allay-eb3c5b88ffab4ff199663cb40fcc1402)
+[Deployed Project](https://labs21-allay-fe.herokuapp.com/)
 
-
-
-1️⃣ [Deployed Front End](https://allay23-staging-ds.herokuapp.com/)
+[Deployed DS API](https://allay23-staging-ds.herokuapp.com/)
 
 ### Tech Stack
 
 We use Python in Jupyter Notebooks to explore and model the data. We then save
-that model and implement it within a Flask app, which is deployed to Heroku
+that model and implement it within a FastAPI app, which is deployed to Heroku
 for live deployment and prediction.
 
 ### Predictions
 
 We use a text classifier model to categorize whether reviews posted to the
-Allay Lambda School website are appropriate.
+Allay website are appropriate.
 
 <img src="https://i.imgur.com/ccUMIze.png" width="500">
 
@@ -85,6 +87,10 @@ This gets broken down into numerical features which are then modeled.
 ### 3️⃣ How to connect to the data API
 
 🚫 List directions on how to connect to the API here
+
+[Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
+
+[Allay DS API Alternate Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
 
 ## Contributing
 
@@ -128,5 +134,4 @@ See [Backend Documentation](_link to your backend readme here_) for details on t
 
 See [Front End Documentation](_link to your front end readme here_) for details on the front end of our project.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/test_coverage)
+See [API Documentation](./allay-ds-api/README.md) for details on the data science API of our project.
