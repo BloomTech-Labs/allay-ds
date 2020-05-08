@@ -74,7 +74,7 @@ This gets broken down into numerical features which are then modeled.
 
 - [Hate and Abusive Speech on Twitter](https://github.com/ENCASEH2020/hatespeech-twitter) (code) -
 [Large Scale Crowdsourcing and Characterization of Twitter Abusive Behavior](https://arxiv.org/abs/1802.00393) (paper)
-- [Automated Hate Speech Detection and the Problem of Offensive Language](https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master/data) (code) -
+- [Automated Hate Speech Detection and the Problem of Offensive Language](https://github.com/t-davidson/hate-speech-and-offensive-language) (code) -
 [Automated Hate Speech Detection and the Problem of Offensive Language](https://arxiv.org/abs/1703.04009) (paper)
 - [Twitter Hate Speech](https://www.kaggle.com/vkrahul/twitter-hate-speech)
 - [Allay user content](https://labs21-allay-fe.herokuapp.com/)
@@ -87,7 +87,7 @@ This gets broken down into numerical features which are then modeled.
 
 [Baseline ML models](./exploration/train_ml_models.ipynb)
 
-[Baseline neural network models](./exploration/train_nn_models/ipynb)
+[Baseline neural network models](./exploration/train_nn_models.ipynb)
 
 ### 3️⃣ How to connect to the web API
 
@@ -141,10 +141,10 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Allay backend](https://github.com/Lambda-School-Labs/allay-be/README.md) for details on the backend of our project.
+See [Allay backend](https://github.com/Lambda-School-Labs/allay-be/blob/master/README.md) for details on the backend of our project.
 
-See [Allay frontend](https://github.com/Lambda-School-Labs/allay-fe/README.md) for details on the front end of our project.
+See [Allay frontend](https://github.com/Lambda-School-Labs/allay-fe/blob/master/README.md) for details on the front end of our project.
 
 See [API Documentation](./allay-ds-api/README.md) for details on the data science API of our project.
 
-See [Exploration readme](./exploration/READMD.md) for details on Weights and Biases hyperparameter sweeps.
+See [Exploration readme](./exploration/README.md) for details on Weights and Biases hyperparameter sweeps.
