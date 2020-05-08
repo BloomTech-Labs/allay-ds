@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/github/license/Lambda-School-Labs/allay-ds)](https://github.com/Lambda-School-Labs/allay-ds/blob/master/LICENSE)
 ![Python 3.7.6](https://img.shields.io/badge/python-3.7.6-blue)
 ![FastAPI](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/fastapi)
-![Tensorflow](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/tensorflow-cpu?label=tensorflow)
+![Tensorflow](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/tensorflow)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/test_coverage)
