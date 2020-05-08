@@ -9,7 +9,7 @@ Run the following two lines of code to initialize and run a sweep. The first
 line of code will give you a sweep id which you will need to insert in the
 second line.
 ```python
-wandb sweep exploration/sweep.yaml
+wandb sweep -p allay-ds-23 exploration/<configuration yaml file>
 wandb agent USER/PROJECT/SWEEP_ID
 ```
 
@@ -25,3 +25,8 @@ is terminated with control-C (or your OS's equivalent).
 
 [Weights and Biases Sweeps](https://docs.wandb.com/sweeps/) contains further
 documentation.
+
+Availalbe sweeps:
+- sweep.yaml : sweep_train.py
+- rnn_sweep.yaml : rnn_sweep_train.py
+- sweep_cnn.yaml : sweep_cnn_train.py

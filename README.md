@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/github/license/Lambda-School-Labs/allay-ds)](https://github.com/Lambda-School-Labs/allay-ds/blob/master/LICENSE)
 ![Python 3.7.6](https://img.shields.io/badge/python-3.7.6-blue)
 ![FastAPI](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/fastapi)
-![Tensorflow](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/tensorflow-cpu?label=tensorflow)
+![Tensorflow](https://img.shields.io/github/pipenv/locked/dependency-version/Lambda-School-Labs/allay-ds/tensorflow)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/test_coverage)
@@ -10,16 +10,18 @@
 
 # Allay
 
-You can find the project at [Allay URL](https://labs21-allay-fe.herokuapp.com/). (This is currently the Labs 21 version.)
+The Allay project is [deployed on Heroku](https://labs21-allay-fe.herokuapp.com/).
+
+The data science content moderation API is [deployed on Heroku](https://allay23-staging-ds.herokuapp.com/docs).
 
 ## 5️⃣ Contributors
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
-|[Alex Jenkins-Neary](https://github.com/alexmjn)|[Caleb Spraul](https://github.com/jcs-lambda)|[Andrew Archie](https://github.com/BaiganKing)|
+|[Alex Jenkins-Neary](http://www.alexjenkinsneary.com)|[Caleb Spraul](https://jcs-lambda.github.io)|[Andrew Archie](https://baiganking.github.io)|
 | :----: | :----: | :----: |
 |[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/alexmjn)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/jcs-lambda)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/BaiganKing)|
-|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/alexjenkinsneary)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/andrew-archie-04b24b1a9)|
 
 
 🚫 5️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
@@ -38,18 +40,25 @@ You can find the project at [Allay URL](https://labs21-allay-fe.herokuapp.com/).
 
 [Deployed Project](https://labs21-allay-fe.herokuapp.com/)
 
-[Deployed DS API](https://allay23-staging-ds.herokuapp.com/)
+[Deployed DS API](https://allay23-staging-ds.herokuapp.com/docs)
 
 ### Tech Stack
 
-We use Python in Jupyter Notebooks to explore and model the data. We then save
-that model and implement it within a FastAPI app, which is deployed to Heroku
-for live deployment and prediction.
+We use Python in Jupyter Notebooks to [explore and model the data](./exploration).
+We then save that model and implement it within a [FastAPI app](./allay-ds-api),
+which is [deployed to Heroku](https://allay23-staging-ds.herokuapp.com/docs) 
+for live classification of Allay user generated content.
+
+We use [Weights & Biases](https://www.wandb.com) for machine learning tracking
+and to automate and report hyperparameter tuning for model optimization.
+
+We use [Keras with Tensorflow](https://www.tensorflow.org/guide/keras/overview)
+for modeling.
 
 ### Predictions
 
-We use a text classifier model to categorize whether reviews posted to the
-Allay website are appropriate.
+We implement Natural Language Processing using a text classifier model to
+categorize whether reviews posted to the Allay website are appropriate.
 
 <img src="https://i.imgur.com/ccUMIze.png" width="500">
 
@@ -63,26 +72,28 @@ This gets broken down into numerical features which are then modeled.
 ### Data Sources
 🚫  Add to or delete souce links as needed for your project
 
-
--   [Source 1] (🚫add link to python notebook here)
--   [Source 2] (🚫add link to python notebook here)
--   [Source 3] (🚫add link to python notebook here)
--   [Source 4] (🚫add link to python notebook here)
--   [Source 5] (🚫add link to python notebook here)
+- [Hate and Abusive Speech on Twitter](https://github.com/ENCASEH2020/hatespeech-twitter) (code) -
+[Large Scale Crowdsourcing and Characterization of Twitter Abusive Behavior](https://arxiv.org/abs/1802.00393) (paper)
+- [Automated Hate Speech Detection and the Problem of Offensive Language](https://github.com/t-davidson/hate-speech-and-offensive-language) (code) -
+[Automated Hate Speech Detection and the Problem of Offensive Language](https://arxiv.org/abs/1703.04009) (paper)
+- [Twitter Hate Speech](https://www.kaggle.com/vkrahul/twitter-hate-speech)
+- [Allay user content](https://labs21-allay-fe.herokuapp.com/)
 
 ### Python Notebooks
 
 🚫  Add to or delete python notebook links as needed for your project
 
-[Python Notebook 1](🚫add link to python notebook here)
+[Data Exploration](./exploration/explore_data.ipynb)
 
-[Python Notebook 2](🚫add link to python notebook here)
+[Baseline ML models](./exploration/train_ml_models.ipynb)
 
-[Python Notebook 3](🚫add link to python notebook here)
+[Baseline neural network models](./exploration/train_nn_models.ipynb)
 
 ### 3️⃣ How to connect to the web API
 
-🚫 List directions on how to connect to the API here
+[Allay frontend](https://github.com/Lambda-School-Labs/allay-fe)
+
+[Allay backend](https://github.com/Lambda-School-Labs/allay-be)
 
 ### 3️⃣ How to connect to the data API
 
@@ -90,13 +101,13 @@ This gets broken down into numerical features which are then modeled.
 
 [Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
 
-[Allay DS API Alternate Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
+[Allay DS API Redoc Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
 
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-Please note we have a [code of conduct](./code_of_conduct.md.md). Please follow it in all your interactions with the project.
+Please note we have a [code of conduct](./code_of_conduct.md). Please follow it in all your interactions with the project.
 
 ### Issue/Bug Request
 
@@ -130,8 +141,10 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Backend Documentation](_link to your backend readme here_) for details on the backend of our project.
+See [Allay backend](https://github.com/Lambda-School-Labs/allay-be/blob/master/README.md) for details on the backend of our project.
 
-See [Front End Documentation](_link to your front end readme here_) for details on the front end of our project.
+See [Allay frontend](https://github.com/Lambda-School-Labs/allay-fe/blob/master/README.md) for details on the front end of our project.
 
 See [API Documentation](./allay-ds-api/README.md) for details on the data science API of our project.
+
+See [Exploration readme](./exploration/README.md) for details on Weights and Biases hyperparameter sweeps.
