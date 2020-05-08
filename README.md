@@ -18,10 +18,10 @@ The data science content moderation API is [deployed on Heroku](https://allay23-
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
-|[Alex Jenkins-Neary](https://github.com/alexmjn)|[Caleb Spraul](https://github.com/jcs-lambda)|[Andrew Archie](https://github.com/BaiganKing)|
+|[Alex Jenkins-Neary](http://www.alexjenkinsneary.com)|[Caleb Spraul](https://jcs-lambda.github.io)|[Andrew Archie](https://baiganking.github.io)|
 | :----: | :----: | :----: |
 |[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/alexmjn)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/jcs-lambda)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/BaiganKing)|
-|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/alexjenkinsneary)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/andrew-archie-04b24b1a9)|
 
 
 🚫 5️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
