@@ -9,7 +9,7 @@ Run the following two lines of code to initialize and run a sweep. The first
 line of code will give you a sweep id which you will need to insert in the
 second line.
 ```python
-wandb sweep exploration/sweep.yaml
+wandb sweep -p allay-ds-23 exploration/sweep.yaml
 wandb agent USER/PROJECT/SWEEP_ID
 ```
 
