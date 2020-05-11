@@ -1,3 +1,17 @@
+# Allay DS API
+
+## Tech stack
+- [FastAPI](https://fastapi.tiangolo.com) 0.54.1
+- [Heroku](https://heroku.com)
+
+## Documentation
+- [Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
+- [Allay DS API Redoc Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
+
+## Diagram
+![API Flowchart](../images/allay23-ds-api.png)
+
+## Instructions
 install virtual environment (in repo root)
 ```
 pipenv install --python=3.7.6
