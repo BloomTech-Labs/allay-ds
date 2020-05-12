@@ -1,6 +1,6 @@
 program: exploration/rnn_sweep_train.py
-name: rnn
-description: rnn with additional layers
+name: rnn-2
+description: lowercase lemmas, max_features 8000, min_df .00005
 method: bayes
 metric:
   name: val_accuracy
@@ -8,10 +8,16 @@ metric:
 parameters:
   epochs:
     min: 3
-    max: 6
+    max: 10
   learning_rate:
-    min: 0.0001
+    min: 0.00005
     max: 0.01
+  batch_size:
+    values: [256, 128, 64, 32]
+  weight_decay:
+    values: [.0005, .005, .05]
+  dropout:
+    values: [.2, .3, .4, .5]
 early_terminate:
     type: hyperband
     min_iter: 3

@@ -36,7 +36,11 @@ y_val = pd.read_pickle("exploration/data/y_val.xz")
 # Set defaults for each parameter you are sweeping through.
 hyperparameter_defaults = dict(
     learning_rate = 0.001,
-    epochs = 3
+    epochs = 3,
+    batch_size = 128,
+    weight_decay = .0005,
+    dropout = .3
+
     )
 
 wandb.init(config=hyperparameter_defaults)
@@ -48,25 +52,30 @@ WANDB_API_KEY = "0fcba704b9f2b77c7881c3e23af2d4adf89dbbbd"
 # Turn data into a form that Keras accepts.
 # This section can be customized.
 model = Sequential()
-model.add(Embedding(5001,
-                    64,
+model.add(Embedding(8001,
+                    128,
                     input_length=60))
+model.add(LSTM(128, return_sequences=True))
+model.add(Dropout(config.dropout))
 model.add(LSTM(64, return_sequences=True))
-model.add(Dropout(.2))
+model.add(Dropout(config.dropout))
 model.add(LSTM(64, return_sequences=True))
-model.add(Dropout(.2))
+model.add(Dropout(config.dropout))
 model.add(LSTM(32, return_sequences=True))
+model.add(Dropout(config.dropout))
 model.add(LSTM(16))
 
 model.add(Dense(units=1, activation='sigmoid'))
-
+optimizer = Nadam(lr=config.learning_rate, beta_1=0.9, beta_2=0.999, clipnorm=1.0)
 model.compile(loss='binary_crossentropy', optimizer='nadam', metrics=['accuracy'])
 
-model.fit(x_train, y_train, batch_size=32,
-                steps_per_epoch=len(x_train) / 32, epochs=config.epochs,
+model.fit(x_train, y_train, batch_size=config.batch_size,
+                epochs=config.epochs,
                 validation_data=(x_val, y_val),
-                callbacks=[WandbCallback(validation_data=(x_val, y_val),
-                labels=["appropriate", "inappropriate"])])
+                callbacks=[WandbCallback(monitor='val_accuracy',
+                validation_data=(x_val, y_val),
+                labels=["appropriate", "inappropriate"]),
+                EarlyStopping(patience=5, restore_best_weights=True)])
 
 # Will automatically log many metrics with the callback.
 #wandb.log({'val_accuracy': accuracy})
