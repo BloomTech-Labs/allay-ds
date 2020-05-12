@@ -99,4 +99,4 @@ Werkzeug==1.0.1
 # widgetsnbextension==3.5.1
 wrapt==1.12.1
 zipp==3.1.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.2.5/en_core_web_md-2.2.5.tar.gz#egg=en_core_web_md
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz#egg=en_core_web_sm
