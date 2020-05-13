@@ -5,7 +5,8 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 
-from .models.rate_random import get_score
+# from .models.rate_random import get_score
+from .models.rate_cnn import get_score
 from .request_response_items import (RecommendReponseItem,
                                      RecommendRequestItem, ReviewRequestItem,
                                      ReviewResponseItem)
@@ -24,9 +25,9 @@ def score_to_flag(score: float):
     assert isinstance(score, float), f'score type ({type(score)}) not float.'
     assert score >= 0.0 and score <= 1.0, \
         f'Score ({score}) outside acceptable range (0->1).'
-    if score < 1/3:
+    if score < 0.2:
         return 0
-    elif score < 2/3:
+    elif score < 0.95:
         return 1
     else:
         return 2
