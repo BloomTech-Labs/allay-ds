@@ -5,14 +5,14 @@ and to train and evaluate models.
 
 # Notebooks
 - [explore_data.ipynb](explore_data.ipynb)
-  - Combine and deduplicte datasets
+  - Loads and cleans our data
 - [data2lemma2vec.ipynb](data2lemma2vec.ipynb)
-  - Convert training dataset to lemmas and vectors
-  - Export results as pickled dataframes
+  - Converts training dataset to lemmas and vectors
+  - Exports results as pickled dataframes
 - [train_ml_models.ipynb](train_ml_models.ipynb)
-  - Baseline traditional machine learning models
+  - Contains baseline traditional machine learning models
 - [train_nn_models.ipynb](train_nn_models.ipynb)
-  - Baseline neural network models
+  - Contains baseline neural network models
 
 # WandB Hyperparameter Sweep Instructions
 
@@ -37,11 +37,11 @@ is terminated with control-C (or your OS's equivalent).
 [Weights and Biases Sweeps](https://docs.wandb.com/sweeps/) contains further
 documentation.
 
-### Availalbe sweeps:
+### Available sweeps:
 - [sweep.yaml](sweep.yaml) : [sweep_train.py](sweep_train.py)
 - [rnn_sweep.yaml](rnn_sweep.yaml) : [rnn_sweep_train.py](rnn_sweep_train.py)
 - [sweep_cnn.yaml](sweep_cnn.yaml) : [sweep_cnn_train.py](sweep_cnn_train.py)
 
 ### Additional files:
 - [process_data.py](process_data.py)
-  - helper functions to minimize code reuse
+  - Contains helper functions to minimize code reuse
