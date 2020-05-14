@@ -5,8 +5,8 @@
 - [Heroku](https://heroku.com)
 
 ## Documentation
-- [Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
-- [Allay DS API Redoc Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
+- [Allay DS API Documentation](https://allay-ds.herokuapp.com/docs)
+- [Allay DS API Redoc Documentation](https://allay-ds.herokuapp.com/redoc)
 
 ## Diagram
 ![API Flowchart](../images/allay23-ds-api.png)
@@ -28,8 +28,10 @@ cd allay-ds-api
 uvicorn fastapi_app:APP --reload
 ```
 
-push to heroku (in repo root)
+push to heroku staging (in repo root)
 ```
 git checkout feature/<your-feature-name>
 git subtree push --prefix allay-ds-api staging master
 ```
+
+Heroku is setup to automatically deploy to production environment on merge to master.
