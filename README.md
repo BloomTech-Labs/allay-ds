@@ -6,7 +6,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0cb57994085c5522e552/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/allay-ds/test_coverage)
 
-🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
 
 # Allay
 
@@ -16,21 +15,12 @@ The data science content moderation API is [deployed on Heroku](https://allay23-
 
 ## 5️⃣ Contributors
 
-🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
 |[Alex Jenkins-Neary](http://www.alexjenkinsneary.com)|[Caleb Spraul](https://jcs-lambda.github.io)|[Andrew Archie](https://baiganking.github.io)|
 | :----: | :----: | :----: |
-|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/alexmjn)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/jcs-lambda)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/BaiganKing)|
+|[<img src="https://i.imgur.com/6v9O0wn.jpg" width = "200" />](https://github.com/alexmjn)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/jcs-lambda)|[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/BaiganKing)|
 |[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexmjn)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/alexjenkinsneary)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jcs-lambda)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/)|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BaiganKing)[<img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">](https://www.linkedin.com/in/andrew-archie-04b24b1a9)|
 
-
-🚫 5️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
-
-![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-🚫 more info on using badges [here](https://github.com/badges/shields)
 
 ## Project Overview
 
@@ -40,13 +30,13 @@ The data science content moderation API is [deployed on Heroku](https://allay23-
 
 [Deployed Project](https://labs21-allay-fe.herokuapp.com/)
 
-[Deployed DS API](https://allay23-staging-ds.herokuapp.com/docs)
+[Deployed DS API](https://allay-ds.herokuapp.com/docs)
 
 ### Tech Stack
 
 We use Python in Jupyter Notebooks to [explore and model the data](./exploration).
 We then save that model and implement it within a [FastAPI app](./allay-ds-api),
-which is [deployed to Heroku](https://allay23-staging-ds.herokuapp.com/docs) 
+which is [deployed to Heroku](https://allay23-staging-ds.herokuapp.com/docs)
 for live classification of Allay user generated content.
 
 We use [Weights & Biases](https://www.wandb.com) for machine learning tracking
@@ -70,34 +60,30 @@ Ultimately, the explanatory variable is the text that is posted to the website.
 This gets broken down into numerical features which are then modeled.
 
 ### Data Sources
-🚫  Add to or delete souce links as needed for your project
 
-- [Hate and Abusive Speech on Twitter](https://github.com/ENCASEH2020/hatespeech-twitter) (code) -
-[Large Scale Crowdsourcing and Characterization of Twitter Abusive Behavior](https://arxiv.org/abs/1802.00393) (paper)
-- [Automated Hate Speech Detection and the Problem of Offensive Language](https://github.com/t-davidson/hate-speech-and-offensive-language) (code) -
-[Automated Hate Speech Detection and the Problem of Offensive Language](https://arxiv.org/abs/1703.04009) (paper)
+- [Hate and Abusive Speech on Twitter](https://github.com/ENCASEH2020/hatespeech-twitter) (code)
+- [Large Scale Crowdsourcing and Characterization of Twitter Abusive Behavior](https://arxiv.org/abs/1802.00393) (paper)
+- [Automated Hate Speech Detection and the Problem of Offensive Language](https://github.com/t-davidson/hate-speech-and-offensive-language) (code)
+- [Automated Hate Speech Detection and the Problem of Offensive Language](https://arxiv.org/abs/1703.04009) (paper)
 - [Twitter Hate Speech](https://www.kaggle.com/vkrahul/twitter-hate-speech)
 - [Allay user content](https://labs21-allay-fe.herokuapp.com/)
 
 ### Python Notebooks
 
-🚫  Add to or delete python notebook links as needed for your project
 
 [Data Exploration](./exploration/explore_data.ipynb)
 
-[Baseline ML models](./exploration/train_ml_models.ipynb)
+[Baseline Traditional ML models](./exploration/train_ml_models.ipynb)
 
-[Baseline neural network models](./exploration/train_nn_models.ipynb)
+[Baseline Neural Network models](./exploration/train_nn_models.ipynb)
 
 ### 3️⃣ How to connect to the web API
 
-[Allay frontend](https://github.com/Lambda-School-Labs/allay-fe)
+[Allay Frontend](https://github.com/Lambda-School-Labs/allay-fe)
 
-[Allay backend](https://github.com/Lambda-School-Labs/allay-be)
+[Allay Backend](https://github.com/Lambda-School-Labs/allay-be)
 
 ### 3️⃣ How to connect to the data API
-
-🚫 List directions on how to connect to the API here
 
 [Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
 
