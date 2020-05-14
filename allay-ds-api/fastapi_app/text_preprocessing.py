@@ -1,9 +1,18 @@
 """Process incoming text into a format usable by the ML models.
+
+Contains functions for cleaning the text, creating lemmas, creating the
+word2idx sequences for incoming text.
+
+Entrypoint should be `preprocess_XXX()` methods to customize prepreocessing
+for the type of model in use.
+
+Preprocessing should use the same methods used in the train_XX_models.ipynb
+notebooks in the <repo-root>/exploration folder.
 """
 
+import os
 import re
 from pickle import load
-import os
 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
@@ -14,17 +23,18 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 with open(dir_path + '/pickles/word2idx.pkl', 'rb') as f:
     word2idx = load(f)
 
+
 # Preprocessing for lemmatization
 # add / remove stop words, normalize, any text processing as necessary
-# documents passed to the make_lemmas function should be processed with clean_strings first
+# documents passed to the make_lemmas function should be processed with
+# clean_strings first:
 #   df['cleaned'] = df['tweet'].apply(clean_strings)
 #   df['lemmas'] = make_lemmas(nlp, df['cleaned'])
-
-
 def clean_str(string):
     """
     Tokenization/string cleaning for all datasets except for SST.
-    Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
+    Original taken from 
+    https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
 
     modified to accept '@' and '#' characters
     """
@@ -44,9 +54,9 @@ def clean_str(string):
     return string.strip().lower()
 
 
+# Lemmatization variables
 # additional tokens to ignore
 STOP_WORDS = ['user', 'amp', '-PRON-']
-
 # empty / entirely whitespace
 is_empty_pattern = re.compile(r'^\s*$')
 # entirely (123, 1.23, 1/2, 1,234, 1st, 12th, etc)
@@ -56,7 +66,8 @@ is_symbol_pattern = re.compile(r'^[\d&#\\ud;]$')
 
 
 def make_lemmas(nlp, docs):
-    """Creates a list of documents containing the lemmas of each document in the input docs.
+    """Creates a list of documents containing the lemmas of each document
+    in the input docs.
 
     :param nlp: spaCy NLP model to use
     :param docs: list of documents to lemmatize
@@ -85,11 +96,27 @@ def make_lemmas(nlp, docs):
 
 
 def to_sequence(index, text):
+    """Returns a list of integer indicies of lemmas in `text` to the word2idx
+    vocab in `index`.
+
+    :param index: word2idx vocab.
+
+    :param text: list of tokens / lemmas / words to be indexed
+
+    :returns: list of indicies
+    """
     indexes = [index[word] for word in text if word in index]
     return indexes
 
 
-def preprocess_cnn(text):
+def preprocess_cnn(text: str):
+    """Preprocess a string of text into a padded sequence for use as input
+    in the CNN content moderation model.
+
+    :param text: string of text to be rated for inappropriateness
+
+    :returns: padded sequence of vocab indicies for use as input on the model
+    """
     cleaned = clean_str(text)
     lemmas = make_lemmas(NLP, [cleaned])
     sequence = to_sequence(word2idx, lemmas[0])

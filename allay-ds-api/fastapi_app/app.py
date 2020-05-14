@@ -1,17 +1,11 @@
 """fastAPI application core logic."""
 
-import os
-
-from dotenv import load_dotenv
 from fastapi import FastAPI
 
-# from .models.rate_random import get_score
 from .models.rate_cnn import get_score
 from .request_response_items import (RecommendReponseItem,
                                      RecommendRequestItem, ReviewRequestItem,
                                      ReviewResponseItem)
-
-assert load_dotenv(), 'failed to initialize environment'
 
 
 def score_to_flag(score: float):
