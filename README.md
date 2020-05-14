@@ -36,7 +36,7 @@ The data science content moderation API is [deployed on Heroku](https://allay23-
 
 We use Python in Jupyter Notebooks to [explore and model the data](./exploration).
 We then save that model and implement it within a [FastAPI app](./allay-ds-api),
-which is [deployed to Heroku](https://allay23-staging-ds.herokuapp.com/docs)
+which is [deployed to Heroku](https://allay-ds.herokuapp.com/docs)
 for live classification of Allay user generated content.
 
 We use [Weights & Biases](https://www.wandb.com) for machine learning tracking
@@ -85,9 +85,9 @@ This gets broken down into numerical features which are then modeled.
 
 ### 3️⃣ How to connect to the data API
 
-[Allay DS API Documentation](https://allay23-staging-ds.herokuapp.com/docs)
+[Allay DS API Documentation](https://allay-ds.herokuapp.com/docs)
 
-[Allay DS API Redoc Documentation](https://allay23-staging-ds.herokuapp.com/redoc)
+[Allay DS API Redoc Documentation](https://allay-ds.herokuapp.com/docs)
 
 ## Contributing
 
