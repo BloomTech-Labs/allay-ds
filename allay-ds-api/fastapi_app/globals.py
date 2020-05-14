@@ -1,10 +1,9 @@
 """Global variables.
 
 These are variables which take some time to initialize and occupy large
-chunks of memory. They do not change after initializing.
-
-They are here so they can be accessed by any submodule of this package
-without being loaded again.
+chunks of memory. They do not change after initializing. They are here so 
+they can be accessed by any submodule of this package without being loaded
+again.
 """
 
 import os
