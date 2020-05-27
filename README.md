@@ -13,7 +13,7 @@ The Allay project is [deployed on Heroku](https://labs21-allay-fe.herokuapp.com/
 
 The data science content moderation API is [deployed on Heroku](https://allay23-staging-ds.herokuapp.com/docs).
 
-## 5️⃣ Contributors
+## Contributors
 
 
 |[Alex Jenkins-Neary](http://www.alexjenkinsneary.com)|[Caleb Spraul](https://jcs-lambda.github.io)|[Andrew Archie](https://baiganking.github.io)|
@@ -77,13 +77,13 @@ This gets broken down into numerical features which are then modeled.
 
 [Baseline Neural Network models](./exploration/train_nn_models.ipynb)
 
-### 3️⃣ How to connect to the web API
+### How to connect to the web API
 
 [Allay Frontend](https://github.com/Lambda-School-Labs/allay-fe)
 
 [Allay Backend](https://github.com/Lambda-School-Labs/allay-be)
 
-### 3️⃣ How to connect to the data API
+### How to connect to the data API
 
 [Allay DS API Documentation](https://allay-ds.herokuapp.com/docs)
 
